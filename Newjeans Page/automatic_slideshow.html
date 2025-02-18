@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Slideshow</title>
+ </head>
+ <body>
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;
+justify-content: center;
+text-align: center;
+align-items: center;
+margin: 0 auto;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.slideshow_text {
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+.slideshow_desc p {
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: none;
+    
+}
+.slideshow_button{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+
+}
+.slideshow_button p{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+    border: 4px solid;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dot_pos{
+  text-align: center;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 80px;
+  left: 48%;
+}
+
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="NewJeans-1st-Mini-Album-New-Jeans-Concept-Teasers-documents-1.jpeg" style="width:1000" height="670">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="NewJeans-Single-Album-Supernatural-Concept-Photo-documents-15(2).jpeg" style="width:1000" height="670">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="NewJeans-Japan-Single-Supernatural-Concept-Photo-documents-1.jpeg" style="width:1000" height="670">
+</div>
+
+<div class="slideshow_text">
+<div class="slideshow_desc">
+    <p>Newjeans is girl group from korea, that consist of 5 members, that under Ador label and debuted from 2022.</p>
+</div>
+<div class="slideshow_button">
+    <div class="sn"><p>See News</p></div>
+    <div class="sm"><p>See More</p></div>
+</div>
+</div>
+</div>
+<br>
+
+<div class="dot_pos">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
+
+ </body>
+ </html>
