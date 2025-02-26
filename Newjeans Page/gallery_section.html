@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Section</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto One', sans-serif;            ;
+        }
+        .gallery_title{
+            color: #4183BD;
+        }
+
+        .gallery_head {
+            border: 3px solid #150D83;
+            border-radius: 20px;
+            background-color: #EFF8FF;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .gallery_head p{
+            color: #150D83;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .gallery_board{
+            background-color: #C59C6E;
+        }
+
+        .hover-gallery {
+  transform: translate3d(0, 0, 0);
+  background-color: #C59C6E;
+  padding: 50px;
+  min-height: 600px;
+  text-align: center;
+}
+
+.gallery-container {
+  padding: 0;
+  margin: 0;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  transition-delay: 0.25s;
+}
+
+.item:hover {
+  flex: 14;
+}
+
+.item p {
+  position: absolute;
+  top: 0;
+  margin: 2rem;
+  padding: 1rem;
+  display: none;
+  color: #fff;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.item:hover p {
+  display: block;
+  animation: fade-in 2.5s ease;
+}
+
+    </style>
+</head>
+<body>
+    <div gallery>
+
+        <div class="button_sg">
+            <div class="gallery_title">
+                <h1>Gallery</h1>
+            </div>
+
+            <div class="gallery_head">
+                <p>Newjeans Gallery</p>
+            </div>
+
+            <section class="hover-gallery">
+                <div class="container-fluid gallery-container">
+                  <div class="gallery-wrap">
+                    <div class="item item-1" style="background-image: url('NewJeans-Single-Album-Supernatural-Concept-Photo-documents-15(2).jpeg');"><p>Supernatural</p></div>
+                    <div class="item item-2" style="background-image: url('NewJeans-1st-Mini-Album-New-Jeans-Concept-Teasers-documents-1.jpeg');"><p>New Jeans</p></div>
+                    <div class="item item-3" style="background-image: url('NewJeans-Japan-Single-Supernatural-Concept-Photo-documents-1.jpeg');"><p>Supernatural 2</p></div>
+                    <div class="item item-4" style="background-image: url('NewJeans-Get-Up-2nd-EP-Photos-documents-15(2).jpeg');"><p>Get up</p></div>
+                    <div class="item item-5" style="background-image: url('NewJeans-Get-Up-2nd-EP-Photos-documents-8(1).jpeg');"><p>Get Up 2</p></div>
+                    <div class="item item-6" style="background-image: url('NewJeans-1st-Mini-Album-New-Jeans-Concept-Teasers-documents-4(3).jpeg');"><p>New Jeans(2)</p></div>
+                    <div class="item item-7" style="background-image: url('NewJeans-How-Sweet-Concept-Photo-documents-12.jpeg');"><p>How Sweet(1)</p></div>
+                    <div class="item item-8" style="background-image: url('NewJeans-Single-Album-How-Sweet-Concept-Photo-documents-2(6).jpeg');"><p>How Sweet(2)</p></div>
+
+                  </div>
+                </div>
+              </section>
+
+        </div>
+    </div>
+</body>
+</html>
