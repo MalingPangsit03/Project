@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newjeans Portofolio Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+
+  <!--Navabar Menu and Logo Section-->
+  <nav>
+    <!--
+    <div class="menu-icon">
+       <span class="fas fa-bars"></span>
+    </div>
+    -->
+    <div class="logo_left">
+       <img src="6576deefa96aa9c79f231cb0.png" alt="" style="width: 130px; height: auto;" >
+    </div>
+    <div class="nav-items">
+       <li><a href="#">Menu1</a></li>
+       <li><a href="#">Menu2</a></li>
+       <li><a href="#">Menu3</a></li>
+       <li><a href="#">Menu4</a></li>
+       <li><a href="#">Menu5</a></li>
+    </div>
+    <div class="logo_right">
+      <img src="image-removebg-preview.png" alt="" style="width: 60px; height: 60px;" >
+   </div>
+    <!-- Not using Search Function
+    <div class="search-icon">
+       <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+       <span class="fas fa-times"></span>
+    </div>
+    <form action="#">
+       <input type="search" class="search-data" placeholder="Search" required>
+       <button type="submit" class="fas fa-search"></button>
+    </form>
+    -->
+ </nav>
+
+
+  <!--Home and AutoSlider Section-->
+  <div class="auto_slider">
+  <div class="slideshow_container">
+
+    <div class="mySlides_auto fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="NewJeans-1st-Mini-Album-New-Jeans-Concept-Teasers-documents-1.jpeg" style="width:1000" height="670">
+    </div>
+    
+    <div class="mySlides_auto fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="NewJeans-Single-Album-Supernatural-Concept-Photo-documents-15(2).jpeg" style="width:1000" height="670">
+    </div>
+    
+    <div class="mySlides_auto fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="NewJeans-Japan-Single-Supernatural-Concept-Photo-documents-1.jpeg" style="width:1000" height="670">
+    </div>
+    
+    <div class="slideshow_text">
+    <div class="slideshow_desc">
+        <p>Newjeans is girl group from korea, that consist of 5 members, that under Ador label and debuted from 2022.</p>
+    </div>
+    <div class="slideshow_button">
+        <div class="sn"><p>See News</p></div>
+        <div class="sm"><p>See More</p></div>
+    </div>
+    </div>
+    
+    </div>
+    
+    <div class="dot_pos">
+      <span class="auto_dot"></span> 
+      <span class="auto_dot"></span> 
+      <span class="auto_dot"></span> 
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+  <!--About and Slider Section-->
+  <div class="about_section">
+
+    <!--Description and Image Section-->
+    <div class="about_text">
+        <div class="about_text_1">
+        <div class="about_title"><h1>About</h1></div>
+        <div class="about_desc"><p>NewJeans (Korean: 뉴진스; RR: Nyujinseu), also known as NJZ (엔제이지; Enjeiji), is a South Korean girl group formed by ADOR, a sub-label of Hybe. The group is composed of five members: Minji, Hanni, Danielle, Haerin, and Hyein. Mainly produced by Min Hee-jin, they are known for their 'girl next door' image and musical stylings reminiscent of the 1990s and 2000s.</p></div>
+        <div class="about_button_sm">See More-></div>
+        </div>
+
+        <div class="about_text_2">
+            <img src="117479555-ezgif.com-webp-to-png-converter.png " style="width: 500px; height: 300px; position: absolute; top: 850px;">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="about_slider">
+
+        <div class="w3-container">
+
+          </div>
+          
+          <div class="w3-content w3-display-container" style="max-width:800px">
+            <div class="image_slider">
+            <img class="mySlides" src="NewJeans-NJWMX-Remix-Album-Concept-Photos-documents-14.jpeg" style="width:344px; height: 458px;">
+            <img class="mySlides" src="NewJeans-NJWMX-Remix-Album-Concept-Photos-documents-12.jpeg" style="width:344px; height: 458px;">
+            <img class="mySlides" src="NewJeans-NJWMX-Remix-Album-Concept-Photos-documents-9.jpeg" style="width:344px; height: 458px;">
+            <img class="mySlides" src="NewJeans-NJWMX-Remix-Album-Concept-Photos-documents-8.jpeg" style="width:344px; height: 458px;">
+            <img class="mySlides" src="NewJeans-NJWMX-Remix-Album-Concept-Photos-documents-5.jpeg" style="width:344px; height: 458px;">
+            </div>
+
+            <div class="image_text">
+                <div class="text_slider">
+                    <p id="image_description"></p>
+            </div>
+        </div>
+
+            
+
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+            </div>
+          </div>
+          
+    </div>
+
+</div>
+
+  <br>
+  <br>
+
+  <!--Gallery and Hover Effect Section-->
+  <div class="gallery">
+    <div class="button_sg">
+        <div class="gallery_title">
+            <h1>Gallery</h1>
+        </div>
+
+        <!--
+        <div class="gallery_head">
+            <p>Newjeans Gallery</p>
+        </div>
+        -->
+        <br>
+        <br>
+
+        <section class="hover-gallery">
+            <div class="container-fluid gallery-container">
+              <div class="gallery-wrap">
+                <div class="item item-1" style="background-image: url('NewJeans-Single-Album-Supernatural-Concept-Photo-documents-15(2).jpeg');"><p>Supernatural</p></div>
+                <div class="item item-2" style="background-image: url('NewJeans-1st-Mini-Album-New-Jeans-Concept-Teasers-documents-1.jpeg');"><p>New Jeans</p></div>
+                <div class="item item-3" style="background-image: url('NewJeans-Japan-Single-Supernatural-Concept-Photo-documents-1.jpeg');"><p>Supernatural 2</p></div>
+                <div class="item item-4" style="background-image: url('NewJeans-Get-Up-2nd-EP-Photos-documents-15(2).jpeg');"><p>Get up</p></div>
+                <div class="item item-5" style="background-image: url('NewJeans-Get-Up-2nd-EP-Photos-documents-8\(1\)\ -\ Copy.jpeg');"><p>Get Up 2</p></div>
+                <div class="item item-6" style="background-image: url('NewJeans-1st-Mini-Album-New-Jeans-Concept-Teasers-documents-4(3).jpeg');"><p>New Jeans(2)</p></div>
+                <div class="item item-7" style="background-image: url('NewJeans-How-Sweet-Concept-Photo-documents-12.jpeg');"><p>How Sweet(1)</p></div>
+                <div class="item item-8" style="background-image: url('NewJeans-Single-Album-How-Sweet-Concept-Photo-documents-2(6).jpeg');"><p>How Sweet(2)</p></div>
+
+              </div>
+            </div>
+          </section>
+
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+  <!--Footer Section-->
+  <footer>
+    
+    <div class="footer">
+      <div>
+
+
+          <div class="footer_image">
+              <img src="About Us photo.png" alt="avatar 1" style="width: 180px; height: 180px; ">
+          </div>
+
+          <div class="footer_text">
+              <div class="text_1">
+                  <h1>About Us</h1>
+                  <hr class="text_line" style="border: 2px solid white; width: 400px;">
+                  <p style="width: 400px;">Meet Sera and Ducky one sings, the other quacks (badly, according to Ducky). Sera hits high notes, Ducky hits debug quacks. Together, they bring you this masterpiece of knowledge. Read, learn, and laugh… or at least pretend to. Enjoy at your own risk!</p>
+              </div>
+
+              <div class="text_2">
+                  <h1>Contact Us</h1>
+                  <hr class="text_line" style="border: 2px solid white; width: 400px;">
+                  <p style="padding-top: 30px;">seraphineee@gmail.com <br>
+                     rubberduckkyyy@gmail.com</p>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </footer>
+
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
