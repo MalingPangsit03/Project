@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Newjeans Portofolio Page</title>
   <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 <body>
@@ -20,11 +21,11 @@
        <img src="6576deefa96aa9c79f231cb0.png" alt="" style="width: 130px; height: auto;" >
     </div>
     <div class="nav-items">
-       <li><a href="#">Menu1</a></li>
-       <li><a href="#">Menu2</a></li>
-       <li><a href="#">Menu3</a></li>
-       <li><a href="#">Menu4</a></li>
-       <li><a href="#">Menu5</a></li>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#music">Discography</a></li>
+       <li><a href="#gallery">Gallery</a></li>
+       <li><a href="#">About Us</a></li>
     </div>
     <div class="logo_right">
       <img src="image-removebg-preview.png" alt="" style="width: 60px; height: 60px;" >
@@ -45,7 +46,8 @@
 
 
   <!--Home and AutoSlider Section-->
-  <div class="auto_slider">
+  
+  <div class="auto_slider" id="#home">
   <div class="slideshow_container">
 
     <div class="mySlides_auto fade">
@@ -87,7 +89,7 @@
 
 
   <!--About and Slider Section-->
-  <div class="about_section">
+  <div class="about_section" id="#about">
 
     <!--Description and Image Section-->
     <div class="about_text">
@@ -146,9 +148,60 @@
 
   <br>
   <br>
+  
+
+  <!--Music and Player Section-->
+  <div class="music" id="#music">
+  <div class="discography_title">
+    <h1>Discography</h1>
+  </div>
+
+  <div class="Discography">
+  
+    <div class="app-container">
+      <div id="volume">
+  <button id="muteBtn"><i class="bx bx-volume-full"></i></button>
+  <div id="volume-bar">
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+    <div id="volumeIndicator" class="volume-indicator"></div>
+  </div>
+</div>
+<img id="albumArt" src="" alt="Album Art">
+<div id="fade"></div>
+<div id="uiWrap">
+<div class="audio-info">
+  <div class="track-info">
+    <div id="trackTitle">Track Title</div>
+    <div id="bandName">Band Name</div>
+    <button id="likeBtn"><i class="far fa-heart"></i></button>
+  </div>
+  <div class="seek-bar">
+    <input type="range" id="seekSlider" min="0" step="1" value="0">
+    <div id="bufferingIndicator" class="buffering-indicator"></div>
+    <div id="seekIndicator" class="seek-indicator"></div>
+    <div id="currentTime">0:00</div>
+    <div id="trackTime">0:00</div>
+  </div>
+</div>
+<div class="audio-controls">
+  <div class="playSkip">
+    <button id="loopBtn"><i class='bx bx-redo' ></i></button>
+    <button id="prevBtn"><i class='bx bxs-fast-forward-circle bx-rotate-180' ></i></button>
+    <button id="playPauseBtn"><i class="bx bx-play"></i></button>
+    <button id="nextBtn"><i class='bx bxs-fast-forward-circle' ></i></i></button>
+    <button id="shuffleBtn"><i class='bx bx-shuffle'></i></button>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+
+  <br>
+  <br>
 
   <!--Gallery and Hover Effect Section-->
-  <div class="gallery">
+  <div class="gallery" id="gallery">
     <div class="button_sg">
         <div class="gallery_title">
             <h1>Gallery</h1>
@@ -162,7 +215,7 @@
         <br>
         <br>
 
-        <section class="hover-gallery">
+        <section class="hover-gallery" style="margin-bottom: 300px;">
             <div class="container-fluid gallery-container">
               <div class="gallery-wrap">
                 <div class="item item-1" style="background-image: url('NewJeans-Single-Album-Supernatural-Concept-Photo-documents-15(2).jpeg');"><p>Supernatural</p></div>
@@ -173,22 +226,19 @@
                 <div class="item item-6" style="background-image: url('NewJeans-1st-Mini-Album-New-Jeans-Concept-Teasers-documents-4(3).jpeg');"><p>New Jeans(2)</p></div>
                 <div class="item item-7" style="background-image: url('NewJeans-How-Sweet-Concept-Photo-documents-12.jpeg');"><p>How Sweet(1)</p></div>
                 <div class="item item-8" style="background-image: url('NewJeans-Single-Album-How-Sweet-Concept-Photo-documents-2(6).jpeg');"><p>How Sweet(2)</p></div>
-
               </div>
             </div>
+
+            <div class="sm_gallery">See More-></div>
           </section>
 
     </div>
   </div>
-
-  <br>
-  <br>
-
-
+  
   <!--Footer Section-->
   <footer>
     
-    <div class="footer">
+    <div class="footer" id="#footer">
       <div>
 
 
